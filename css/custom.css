@@ -1,9 +1,15 @@
 /* ******** Custom additions ********** */
 /* Special Font */
 @font-face {
-    font-family: 'Carlito'; /*a name to be used later*/
-    src: url('../media/Carlito-Regular.ttf'); /*URL to font*/
+  font-family: "LubalinDemiIBM";
+  src: url("static/ibm.woff") format("woff");
 }
+body {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+  color: #222222;
+}
+h1 {font-family: "LubalinDemiIBM" !important; }
+
 /* Make it the default */
 .reveal {  font-family: 'Carlito';  letter-spacing: 0.02em;  text-shadow: none;}
 ul li { margin:20px; vertical-align:top;}
@@ -33,7 +39,7 @@ p .smt{font-size:8px; font-family: 'Arial';} /* small text */
 }
 .footer img{ width:12px;height:12px; }
 .footer #twitter {font-size:20px;text-align:center;}
-.footer #logo {width:10%;height:10%;}
+.footer #logo {width:15%;height:15%;}
 /* Should the blog link be visible on the slide?*/
 .showblog a {font-size:22px;text-align:center;}
 
