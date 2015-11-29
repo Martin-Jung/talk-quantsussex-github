@@ -29,9 +29,11 @@ p .smt{font-size:8px; font-family: 'Arial';} /* small text */
   bottom: 0.2em;
   z-index: 1000;
   max-width: 100%;
+  font-size:20px;
 }
 .footer img{ width:12px;height:12px; }
 .footer #twitter {font-size:20px;text-align:center;}
+.footer #logo {width:10%;height:10%;}
 /* Should the blog link be visible on the slide?*/
 .showblog a {font-size:22px;text-align:center;}
 

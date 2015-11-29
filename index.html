@@ -4,9 +4,9 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Recommendations for broad-scale diversity models from an independent study</title>
+        <title>Reproducible and collaborative coding with Github </title>
 
-        <meta name="description" content="A short, gentle introduction to Perl distribution management with Dist::Zilla">
+        <meta name="description" content="Quantitative Analysis group - Unversity of Sussex">
         <meta name="author" content="Martin Jung">
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -46,138 +46,137 @@
 
             <div class="slides">
             <!-- Title slide-->
-            <section data-background="img/title3.JPG" class="title-slide">
-            <img src="img/ku-LO.png" id="cmec-header">
-                <div id="title-box">
-                    <div id="title">Recommendations for broad-scale diversity models from an independent study</div>
-                <img src="img/CMEC_headerFigure.png" class="defimg" id="cmec">
-                    <small>
+            <section data-background="#ffffff">
+
+                <h2>Reproducible and collaborative coding with Github</h2>
+                    <p>
                       Martin Jung<br>
-                      Center for Macroecology, Climate and Evolution
-                    </small>
-                </div>
+                    </p>
+                <img src='img/codingDeadline.gif'>
             </section>
 
+        <section>
+            <section data-markdown>
+                <script type="text/template">
+            ## What is git?
+
+            - Git is one of the most commonly used revision control systems
+
+            - Originally developed for the Linux kernel by Linus Torvalds
+
+
+                </script>
+            </section>
+
+            <section data-markdown>
+                <script type="text/template">
+            ## What is github ?
+
+            - Github is web-based software repository service offering distributed revision control
+
+            - Californian Startup, now the largest code hoster in the world
+
+            - Offers public repositories for free, private for money and a nice snippet exchange service called gists
+
+            ![Github](github-logo.jpg)
+
+                </script>
+            </section>
+
+            <section data-markdown>
+                <script type="text/template">
+                ## What can it be used for ?
+
+                - Git is one of the most commonly used revision control systems
+
+                - Originally developed for the Linux kernel by Linus Torvalds
+
+                </script>
+            </section>
+
+
+            <section data-markdown data-background='#fffde3'>
+            <script>
+            <img src='img/finaldraft.gif' width='500px'/>
+            </script>
+            </section>
+
+        </section>
+
+<!-- Install Github -->
 <section>
     <section data-markdown>
         <script type="text/template">
-    ## Biodiversity models
-    ![Newbold](img/Newbold2015.png)
-
-    <p>Predicted change in species richnes from Newbold et al. (2015)</p> <!-- .element: style="font-size:12px;" -->
+        <!-- .slide: data-background="img/titleback.jpg" data-transition="concave" -->
 
         </script>
     </section>
 
     <section data-markdown>
         <script type="text/template">
-    ## Potential Problems
+    ## How to get Git?
 <!-- .slide: data-transition="slide-in slide-out" data-background="#F9F9F9" -->
 
-    - Many broad-scale models generalize over a wide range of variables in a single factor (land use ) <!-- .element: class="fragment fade-in current-visible" data-fragment-index="1" -->
-    - It is tempting to apply those models in a new spatial context <!-- .element: class="fragment fade-in current-visible" data-fragment-index="2" -->
-    - Based on available ( biased ? ) data <!-- .element: class="fragment fade-in" data-fragment-index="3" -->
+    - [Windows](http://msysgit.github.io/)
+    - [Linux](http://git-scm.com/download/linux)
+    - [Mac](http://code.google.com/p/git-osx-installer/downloads/list?can=3)
         </script>
     </section>
-</section>
+
 
 <section data-markdown>
     <script type="text/template">
 <!-- .slide: data-transition="slide-in zoom-out" data-background="#F9F9F9" -->
 
-# Question :
+    # Lets get started...
+    ![CreatedRepo](img/createdRepo.png)
 
-How well does a broad-scale model reflect species diversity and abundance on a local land-use gradient where local conditions are known? <!-- .element: class="fragment" data-fragment-index="1" style="text-align:left;font-size:48px;" -->
     </script>
 </section>
 <section>
     <section data-markdown>
         <script type="text/template">
-        # Methods
+        ![File](img/file_lifecycle.png)
         </script>
     </section>
     <section data-markdown>
         <script type="text/template">
-    ![Figure 1](img/Figure1.png)  <!-- .slide: class="smt" -->
-
-
+        - Untracked
+        -- Git doesn't know about these files
+        - Tracked, unmodified
+        -- Git knows about them, and there have been no changes.
+        - Tracked, modified
+        -- File is in git, but changes have been made that git doesn't know about.
+        - Staged
+        -- Changes to this file will be committed next time you commit.
         </script>
     </section>
+
     <section data-markdown>
         <script type="text/template">
-    <!-- .slide: class="smt"-->
-    ![Taita and Kili](img/MapsF.png)
-    ![Taita and Kili2](img/LU.png)
-        </script>
-    </section>
-    <section data-markdown>
-        <script type="text/template">
-    <!-- .slide: class="stretch" data-background-video="media/Speckled_Mousebird.m4v" data-background-video-loop -->
-<br>
-    - Timed point counts <!-- .element: class="fragment fade-in" data-fragment-index="1" -->
-    - Total 147 sites: 172 species, 2700 individual counts <!-- .element: class="fragment fade-in" data-fragment-index="2" -->
 
-        </script>
-    </section>
-    <section data-markdown>
-        <script type="text/template">
-    <!-- .slide: data-transition="fade-in zoom-out" data-background="#FCF4D9" class="icon"-->
-
-    ## Auxiliary data for the comparison
-
-    - Remote-sensing and census data <br>(INDVI and meanNDVI, Human population density, Forest-Cover year 2000 ) <!-- .element: class="fragment" data-fragment-index="1" -->
-    - Functional traits <br>(Range size, Threat status, Forest specialization  ) <!-- .element: class="fragment" data-fragment-index="2" -->
         </script>
     </section>
 </section>
 
-<section>
-    <section data-markdown>
-        <script type="text/template">
-    <!-- .slide: data-transition="convex" -->
-
-    # Results
-        </script>
-    </section>
-
-    <section data-markdown>
-        <script type="text/template">
-<!-- .slide: class="smt" data-background="img/zwartevilt.png" data-background-repeat="repeat" data-transition="none"-->
-
-![Fig2](img/Figure2_trans.png)
-        </script>
-    </section>
-
-    <section data-markdown>
-        <script type="text/template">
-    <!-- .slide: class="smt" data-background="img/zwartevilt.png" data-background-repeat="repeat" data-transition="none"-->
-
-    ![Fig3](img/Figure3_trans.png)
-        </script>
-    </section>
-
-    <section data-markdown>
-        <script type="text/template">
-    <!-- .slide: class="smt" data-background="img/zwartevilt.png" data-background-repeat="repeat" data-transition="none"-->
-
-    ![Fig5](img/Figure5_trans.png)
-        </script>
-    </section>
-</section>
 
 <section data-markdown>
-<div id="cmec-header">
     <script type="text/template">
-    # Summary
-<!-- .slide: data-background="img/Homegarden.png" data-transition="zoom"-->
+    ## Some configuration options
 
-- Cropland higher number of species than the average more intense cropland site (Agroforestry) <!-- .element: class="fragment fade-in" data-fragment-index="1" -->
-- More forest-specialists in cropland <!-- .element: class="fragment fade-in " data-fragment-index="2" -->
-- Community differences in plantation forest maybe driven my type (Eucalyptus)<!-- .element: class="fragment fade-in " data-fragment-index="3" -->
-- However: Primary forest likely lower diversity due to size and fragmentation <!-- .element: class="fragment fade-in" data-fragment-index="4" -->
+    ```
+    # Turn on color
+    git config --global color.ui "auto"
+    # Your signature
+    git config --global user.rame "Your Name"
+    git config --global user.email "M.Jung@sussex.ac.uk"
+    # Your editor
+    git config --global core.editor "sublime -w"
+    # Password caching for https
+    git config --global credential.helper cache
+    ```
 
     </script>
-</div>
 </section>
 
 <section data-markdown>
@@ -192,29 +191,6 @@ How well does a broad-scale model reflect species diversity and abundance on a l
 </section>
 
 
-<section data-markdown>
-    <script type="text/template">
-# Acknowledgements
-- Tim Newbold and Neil Burgess for scientific advice
-- PREDICTS contributors for making data available (http://predicts.org.uk)
-- The CHIESA project partners for support and coordination
-- Everyone at CMEC and UNEP-WCMC
-- Danida Fellowship Centre for financial support
-
-![Danida](img/DanidaFC.png)
-    </script>
-</section>
-<section data-markdown>
-    <script type="text/template">
-<!-- .slide: data-background="white" data-transition="zoom-in" class="showblog" -->
-
-# Thanks for listening!
-
-    </script>
-</section>
-
-
-
             <!-- And the rest in markdown-->
 <!--            <section data-markdown="slides.md" data-separator="^------\n" data-separator-vertical="^---\n">
             </section>
@@ -223,7 +199,7 @@ How well does a broad-scale model reflect species diversity and abundance on a l
             </div> <!-- End of slides -->
             <!-- Footer -->
             <div class="footer">
-                <a href="https://twitter.com/Martin_Ecology" id="twitter"><img src="img/twitter-logo.png" />@Martin-Ecology</a>
+                <img src="img/USLogo.jpg" id='logo'/>
             </div>
         </div>
 
