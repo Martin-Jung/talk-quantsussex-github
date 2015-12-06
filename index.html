@@ -52,7 +52,7 @@
                     <p>
                       Martin Jung<br>
                     </p>
-                <img src='img/codingDeadline.gif'>
+                <img src='img/github-pages-github.jpg'>
             </section>
 
         <section>
@@ -83,7 +83,7 @@
 
             <section data-markdown>
                 <script type="text/template">
-                <!-- .slide: data-background="orange" data-transition="concave"-->
+                <!-- .slide: data-background="white" data-transition="concave"-->
                 ## Why should I use git ?
 
                 > A publication without release of the full dataset, reproducible code and methodology is simply advertisement and not science
@@ -124,76 +124,121 @@
     - [Mac](http://code.google.com/p/git-osx-installer/downloads/list?can=3)
         </script>
     </section>
-
-    <section data-markdown>
-        <script type="text/template">
-        # Go to Github.com
-        </script>
-    </section>
-
-    <section data-markdown>
-        <script type="text/template">
-    <!-- .slide: data-transition="slide-in zoom-out" data-background="#F9F9F9" -->
-
-        # Lets get started...
-        ![CreatedRepo](img/createdRepo.png)
-
-        </script>
-    </section>
+</section>
 
 <section>
+    <section data-markdown>
+        <script type="text/template">
+        <!-- .slide: data-background="white" data-transition="slide-in slide-out"-->
+        ## Initialization
+
+        <center><pre><code data-trim> git init </code></pre></center>
+
+        </script>
+    </section>
+
+    <section data-markdown>
+        <script type="text/template">
+        <!-- .slide: data-background="white" data-transition="slide-in slide-out"-->
+        ## Add & Commit
+
+        <center><pre><code data-trim>
+         // Adds everything
+         git add .
+         // Only a specific file
+         git add analysis.R
+
+         // Commit the changes with a message
+         git commit -m "Changed part 15 in the analysis"
+         </code></pre></center>
+
+        </script>
+    </section>
+
     <section data-markdown>
         <script type="text/template">
         ![File](img/file_lifecycle.png)
         </script>
     </section>
-    <section data-markdown>
-        <script type="text/template">
-        - Untracked
-        -- Git doesn't know about these files
-        - Tracked, unmodified
-        -- Git knows about them, and there have been no changes.
-        - Tracked, modified
-        -- File is in git, but changes have been made that git doesn't know about.
-        - Staged
-        -- Changes to this file will be committed next time you commit.
-        </script>
-    </section>
 
     <section data-markdown>
         <script type="text/template">
+        <!-- .slide: data-background="white" data-transition="slide-in slide-out"-->
+        ## Branching
+
+        <center><pre><code data-trim>
+         // Make a new branch and switch to it
+         git checkout -b UpdatedVersion
+
+         // Back to master
+         git checkout master
+
+         </code></pre></center>
 
         </script>
     </section>
+
+
+    <section data-markdown>
+        <script type="text/template">
+        <!-- .slide: data-background="white" data-transition="slide-in slide-out"-->
+        ## Push and pull
+
+        <center><pre><code data-trim>
+         // Push everything to github
+         git push origin mybranch
+
+         // Get last commits from repository
+         git pull
+
+         </code></pre></center>
+
+        </script>
+    </section>
+
+
 </section>
+
+<section data-markdown>
+    <script type="text/template">
+    <!-- .slide: data-background="darkblue" data-transition="zoom"-->
+
+    ## Something went wrong?
+
+    Reset everything to last commit (CAREFUL)
+    <pre><code data-trim>
+    git reset --hard HEAD
+    </pre></code data-trim>
+
+    Only for a specific file
+    <pre><code data-trim>
+    git checkout -- 01_Analysis.R
+    </pre></code data-trim>
+
+    </code></pre>
+    </script>
+</section>
+
 
 
 <section data-markdown>
     <script type="text/template">
-    ## Some configuration options
+    <!-- .slide: data-background="white" data-transition="zoom"-->
 
-    > # Turn on color
-    > git config --global color.ui "auto"
-    > # Your signature
-    > git config --global user.rame "Your Name"
-    > git config --global user.email "M.Jung@sussex.ac.uk"
-    > # Your editor
-    > git config --global core.editor "sublime -w"
-    > # Password caching for https
-    > git config --global credential.helper cache
+    ### Awwwww. So many new commands
+
+    <huge> [Visit gitref.org](http://gitref.org) </huge>
 
     </script>
 </section>
 
 <section data-markdown>
-    <script type="text/template">
-    # Conclusion
-<!-- .slide: data-background="orange" data-transition="concave"-->
+        <script type="text/template">
+        ## Helpful? Go to [github.com](http://github.com) and open an account now
 
-- Large-scale models succeed at detecting overall impacts of land use change. <!-- .element: class="fragment fade-in" data-fragment-index="1" -->
-- However they might lose accuracy if they are used to predict local impacts on biodiversity, if local conditions do not conform <!-- .element: class="fragment fade-in" data-fragment-index="2" -->
-- Species traits and environmental co-variates could provide a window of opportunity to improve predictions in regions, where coarse categories don´t capture all of the variabilty. <!-- .element: class="fragment fade-in" data-fragment-index="3" -->
-    </script>
+        ![CreatedRepo](img/createdRepo.png)
+
+        </script>
 </section>
 
 
