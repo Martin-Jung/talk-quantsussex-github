@@ -58,7 +58,7 @@
         <section>
             <section data-markdown>
                 <script type="text/template">
-            <!-- .slide: data-background="green" data-transition="slide"-->
+            <!-- .slide: data-background="darkgreen" data-transition="slide"-->
 
             ## What is git?
 
@@ -71,28 +71,14 @@
 
             <section data-markdown>
                 <script type="text/template">
-            ![Github](img/github-logo.jpg)
-            - Github is web-based software repository service offering distributed revision control
-
-            - Californian Startup, now the largest code hoster in the world
-
-            - Offers public repositories for free, private for money and a nice snippet exchange service called gists
-
-                </script>
-            </section>
-
-            <section data-markdown>
-                <script type="text/template">
                 <!-- .slide: data-background="white" data-transition="concave"-->
                 ## Why should I use git ?
 
-                > A publication without release of the full dataset, reproducible code and methodology is simply advertisement and not science
-
                 - Make your code open and shareable  <!-- .element: class="fragment fade-in" data-fragment-index="1" -->
 
-                - Keep track of past changes  <!-- .element: class="fragment fade-in" data-fragment-index="2" -->
+                - Collaborate better  <!-- .element: class="fragment fade-in" data-fragment-index="2" -->
 
-                - Collaborate better  <!-- .element: class="fragment fade-in" data-fragment-index="3" -->
+                - Keep track of past changes  <!-- .element: class="fragment fade-in" data-fragment-index="3" -->
 
                 </script>
             </section>
@@ -116,12 +102,28 @@
 
     <section data-markdown>
         <script type="text/template">
-    ## How to get Git?
+    ## How to Git?
 <!-- .slide: data-transition="slide-in slide-out" data-background="#F9F9F9" -->
 
     - [Windows](http://msysgit.github.io/)
     - [Linux](http://git-scm.com/download/linux)
     - [Mac](http://code.google.com/p/git-osx-installer/downloads/list?can=3)
+        </script>
+    </section>
+
+    <section data-markdown>
+        <script type="text/template">
+        <!-- .slide: data-transition="zoom-out" data-background="white" -->
+
+        ### Where do I Git?
+        <a href="http://github.com"><img src="img/github-logo.jpg" width=100,height=100></a>
+
+        - Web-based software repository service offering distributed revision control
+
+        - Californian Startup, now the largest code hoster in the world
+
+        - Offers public repositories for free, private for money snippet service gists
+
         </script>
     </section>
 </section>
@@ -178,6 +180,11 @@
         </script>
     </section>
 
+    <section data-markdown>
+        <script type="text/template">
+        ![Branch](img/BranchFeature.png)
+        </script>
+    </section>
 
     <section data-markdown>
         <script type="text/template">
@@ -196,40 +203,97 @@
         </script>
     </section>
 
+    <section data-markdown>
+        <script type="text/template">
+        <!-- .slide: data-background="darkblue" data-transition="zoom"-->
 
+        ## Something went wrong?
+
+        Reset everything to last commit (CAREFUL)
+        <pre><code data-trim>
+        git reset --hard HEAD
+        </pre></code data-trim>
+
+        Only for a specific file
+        <pre><code data-trim>
+        git checkout -- 01_Analysis.R
+        </pre></code data-trim>
+
+        </code></pre>
+        </script>
+    </section>
+
+    <section data-markdown>
+        <script type="text/template">
+        <!-- .slide: data-background="white" data-transition="zoom"-->
+
+        ### Awwwww. So many new commands
+
+        <huge> [Visit gitref.org](http://gitref.org) </huge>
+
+        </script>
+    </section>
 </section>
 
-<section data-markdown>
-    <script type="text/template">
-    <!-- .slide: data-background="darkblue" data-transition="zoom"-->
+<section>
+    <section data-markdown>
+        <script type="text/template">
+        <!-- .slide: data-background="darkblue" data-transition="zoom"-->
 
-    ## Something went wrong?
+        ## About reproducibility in science
 
-    Reset everything to last commit (CAREFUL)
-    <pre><code data-trim>
-    git reset --hard HEAD
-    </pre></code data-trim>
+        </script>
+    </section>
 
-    Only for a specific file
-    <pre><code data-trim>
-    git checkout -- 01_Analysis.R
-    </pre></code data-trim>
+    <section data-markdown>
+        <script type="text/template">
+        <!-- .slide: data-background="white" data-transition="zoom"-->
 
-    </code></pre>
-    </script>
-</section>
+        <i>
+        > ... an article about computational result is advertising, not scholarship. The actual
+        > scholarship is the full software environment, code and data that produced the result.
+        </i>
+
+        Buckheit & Donoho (1995)
+
+        </script>
+    </section>
 
 
+    <section data-markdown>
+        <script type="text/template">
+        <!-- .slide: data-background="white" data-transition="zoom"-->
 
-<section data-markdown>
-    <script type="text/template">
-    <!-- .slide: data-background="white" data-transition="zoom"-->
+        ![Reproducability](img/ScienceRepro.png)
+        <small>Source: [Open Science Collaboration (2015) Science](http://dx.doi.org/10.1126/science.aac4716)</small>
 
-    ### Awwwww. So many new commands
+        </script>
+    </section>
 
-    <huge> [Visit gitref.org](http://gitref.org) </huge>
+    <section data-markdown>
+        <script type="text/template">
+        <!-- .slide: data-background="darkgreen" data-transition="fade"-->
 
-    </script>
+        ### Don´t want to host your code/data/results openly (yet)?
+
+        - Reconsider after publishing
+        - Private Reps like [BitBucket](http://bitbucket.org)
+        - Install git locally
+        - Sussex HPC supports git for working groups
+
+        </script>
+    </section>
+
+    <section data-markdown>
+        <script type="text/template">
+        <!-- .slide: data-background="white" data-transition="fade"-->
+
+        ![ReScience](img/ReScienceJournal.png)
+
+        [rescience.github.io](https://rescience.github.io/)
+
+        </script>
+    </section>
 </section>
 
 <section data-markdown>
